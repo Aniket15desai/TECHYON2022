@@ -1,7 +1,7 @@
 
 function EventList() {
     return (
-        <div>
+        <div id="events">
             Event List
             {/* Event list cards will go here */}
         </div>
