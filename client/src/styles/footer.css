@@ -1,0 +1,35 @@
+.footer {
+    font-family: 'Poppins';
+    background-color: #ED0E29;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+.about-title{
+    font-weight: 700;
+    margin: .5rem 0;
+}
+.about-description{
+    font-weight: 400;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+.contact {
+    background-color: #000000;
+    border-top: 2px solid #ED0E29;
+}
+.contact-title{
+    font-weight: 700;
+    margin: .5rem 0;
+}
+.contact-description{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.social-icon {
+    max-width:2.5rem;
+    margin-right: .7rem;
+}
