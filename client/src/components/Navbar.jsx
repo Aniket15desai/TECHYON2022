@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ background: "#0e0d0d" }}>
+    <AppBar position="fixed" sx={{ background: "#0e0d0d" }}>
       <Container maxWidth="xl">
         <Toolbar>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -55,7 +55,7 @@ const Navbar = () => {
             Techyon
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} className="position-absolute" style={{right: '0'}}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -63,6 +63,7 @@ const Navbar = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              // className="position-absolute right-1"
             >
               <MenuIcon />
             </IconButton>

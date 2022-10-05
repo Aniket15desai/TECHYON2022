@@ -30,7 +30,7 @@ function EventList() {
               return (
                 <Box
                   sx={{ px: { xs: 2 }, py: { xs: 1 }, my: { xs: 1}, mx: { xs: 1} }}
-                  className={`event-pill ${selectedCategory == category ? 'active-pill': ''}`}
+                  className={`event-pill ${selectedCategory === category ? 'active-pill': ''}`}
                   key={index}
                   onClick={() => setSelectedCategory(category)}
                 >
@@ -41,24 +41,24 @@ function EventList() {
           </Box>
           <Box sx={{display: 'flex', flexWrap: 'wrap', gap: 1}} className="event-cards">
             {
-              (selectedCategory == "ALL") ? (
+              (selectedCategory === "ALL") ? (
                 eventList.map((event, index) => {
                   return (
                     <Box sx={{p: 2}} className="card" key={index}>
-                    <img src={event.image} alt="" className="event-thumbnail"/>
-                    <h3 className="event-title">{event.event}</h3>
-                    <p className="department-name">{event.department}</p>
-                  </Box>
+                      <img src={event.image} alt="" className="event-thumbnail"/>
+                      <h3 className="event-title">{event.event}</h3>
+                      <p className="department-name">{event.department}</p>
+                    </Box>
                   );
                 })
               ) : (
                 eventList.filter(event => event.categories.includes(selectedCategory)).map((event, index) => {
                   return (
                     <Box sx={{p: 2}} className="card" key={index}>
-                    <img src={event.image} alt="" className="event-thumbnail"/>
-                    <h3 className="event-title">{event.event}</h3>
-                    <p className="department-name">{event.department}</p>
-                  </Box>
+                      <img src={event.image} alt="" className="event-thumbnail" />
+                      <h3 className="event-title">{event.event}</h3>
+                      <p className="department-name">{event.department}</p>
+                    </Box>
                   );
                 })
               )

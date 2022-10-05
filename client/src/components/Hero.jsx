@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/hero.css';
 
 function Hero() {
@@ -11,7 +10,7 @@ function Hero() {
             } else {
               setIsMobile(false);
             }
-        }
+        } 
     })
     return (
         <>
@@ -40,6 +39,4 @@ function Hero() {
     )
 }
 
-export default Hero
-
-
+export default Hero;
