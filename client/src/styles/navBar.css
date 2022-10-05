@@ -1,0 +1,17 @@
+.link{
+    text-decoration: none;
+    font-family: 'poppins';
+    font-weight: 600;
+    color: #ED0E29;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.nav-link:hover{
+
+}
+.active-link{
+    color: #ED0E29;
+    border-bottom: 2px solid #ED0E29;
+}
