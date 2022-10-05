@@ -1,0 +1,38 @@
+.event-pill {
+    font-family: 'Poppins';
+    font-weight: 400;
+    border: 1px solid #ED0E29;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-pill:hover{
+    background-color: #ff001e4d;
+}
+
+.active-pill {
+    background: #ED0E29;
+}
+
+.card {
+    background: red;
+    border-radius: 25px;
+}
+
+.event-thumbnail {
+    border-radius: 10px;
+}
+
+.event-title {
+    font-family: 'poppins';
+    font-weight: 400;
+    padding: .5rem 0 .2rem;
+    margin: 0;
+}
+
+.department-name{
+    font-family: 'poppins';
+    font-weight: 700;
+    padding: .2rem 0;
+}
+
