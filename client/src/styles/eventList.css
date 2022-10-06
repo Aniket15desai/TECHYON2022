@@ -15,7 +15,9 @@
 }
 
 .card {
-    background: red;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(237,14,41,1) 100%);
+border: none;
     border-radius: 25px;
 }
 
@@ -25,14 +27,15 @@
 
 .event-title {
     font-family: 'poppins';
-    font-weight: 400;
+    font-weight: 700;
     padding: .5rem 0 .2rem;
     margin: 0;
 }
 
 .department-name{
     font-family: 'poppins';
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 1em;
     padding: .2rem 0;
 }
 
