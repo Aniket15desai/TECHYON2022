@@ -15,7 +15,7 @@ import '../styles/navBar.css';
 
 const pages = [
   {name: "Home", path: "/"},
-  {name: "Events", path: "#events"},
+  {name: "Events", path: ""},
   {name: "About Us", path: "about"},
   {name: "Result", path: "result"}
 ];
@@ -89,7 +89,18 @@ const Navbar = () => {
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <NavLink className={`link`} to={page.path}>{page.name}</NavLink>
+                    {page.name === 'Events' ? (
+                      <NavLink to={page.path} className={`link`}>
+                        <div onClick={() => {
+                          const anchor = document.getElementById("events");
+                          anchor.scrollIntoView({block: "center"});
+                        }}>
+                          {page.name}
+                        </div>
+                      </NavLink>
+                    ) : (
+                      <NavLink className={`link`} to={page.path}>{page.name}</NavLink>
+                    )}
                   </Typography>
                 </MenuItem>
               ))}
@@ -121,7 +132,20 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, mr: 2, color: "white", display: "block" }}
               >
-                <NavLink to={page.path} className={`nav-link ${(navData) => (navData.isActive ? 'active-link' : '')}`}>{page.name}</NavLink>
+                {page.name === 'Events' ? (
+                  <div onClick={() => {
+                    const anchor = document.getElementById("events");
+                    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }}>
+                    <NavLink to={page.path} className={`nav-link ${(navData) => (navData.isActive ? 'active-link' : '')}`}>
+                      {page.name}
+                    </NavLink>
+                  </div>
+                  ) : (
+                  <NavLink to={page.path} className={`nav-link ${(navData) => (navData.isActive ? 'active-link' : '')}`}>
+                    {page.name}                      
+                  </NavLink>
+                )}
               </Button>
             ))}
           </Box>

@@ -3,7 +3,7 @@ import '../styles/form.css';
 
 const Form = (props) => {
 
-    const [isEvent, setIsEvent] = useState('singleEvent')
+    const [isEvent, setIsEvent] = useState('teamEvent')
     const [isMember, setIsMember] = useState(1);
     const memberType = [
         { id: 1, value: "1" },
@@ -28,6 +28,7 @@ const Form = (props) => {
             <div className={`${props.isMobile ? 'col-12': 'col-6'} px-5 mt-5`}>
                 {isEvent === 'singleEvent' && 
                     <form action="" className="d-flex row justify-content-center">
+                        <input type="text" className="w-100 form-input pl-3 mt-4" id="eventName" value="Code Decrypt" disabled />
                         <input type="text" className="w-100 form-input pl-3 mt-4" id="name" placeholder="Name:" />
                         <input type="email" className="w-100 form-input pl-3 mt-4" id="email" placeholder="Email:" />
                         <input type="text" className="w-100 form-input pl-3 mt-4" id="roll_no" placeholder="Roll no.:" />
@@ -38,9 +39,9 @@ const Form = (props) => {
                 }
                 {isEvent === 'teamEvent' && 
                     <form action="" className="d-flex row justify-content-center">
+                        <input type="text" className="w-100 form-input pl-3 mt-4" id="eventName" value="Code Decrypt" disabled />
                         <input type="text" className="w-100 form-input pl-3 mt-4" id="name" placeholder="Team Name:" />
-                        
-                        <select name="teamMember" id="teamMember" className="form-input w-100 mt-4 pl-3" onChange={e => onChange(e)}>
+                        <select name="teamMember" id="teamMember" className="form-input w-100 mt-4 px-3" onChange={e => onChange(e)}>
                             <option className="bg-black" value="" disabled>Select number of Members</option>
                             {memberType.map((index) => {
                                 return (

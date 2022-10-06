@@ -3,7 +3,7 @@ import "../styles/footer.css";
 
 function Footer() {
   return (
-    <div >
+    <div>
       <svg width="100%" height="106" viewBox="0 0 427 106" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 20.9574C0 98.4963 369.664 46.4701 427 106H104.871H0C0 106 0 -56.5814 0 20.9574Z" fill="url(#paint0_linear_57_259)"/> <defs> <linearGradient id="paint0_linear_57_259" x1="213.5" y1="0" x2="213.5" y2="106" gradientUnits="userSpaceOnUse"> <stop stop-color="#ED0E29"/> <stop offset="1" stop-color="#ED0E29" stop-opacity="0"/> </linearGradient> </defs> </svg>
       <Box sx={{ display: { sm: "flex" } }} className="footer">
         <Box sx ={{width: {sm: '50%'}, p: 2}} className="about">
