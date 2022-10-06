@@ -10,8 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { NavLink } from "react-router-dom";
-import '../styles/navBar.css';
-
+import "../styles/navBar.css";
 
 const pages = [
   {name: "Home", path: "/"},
@@ -22,7 +21,6 @@ const pages = [
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,7 +34,7 @@ const Navbar = () => {
     <AppBar position="fixed" sx={{ background: "#0e0d0d" }}>
       <Container maxWidth="xl">
         <Toolbar>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+          {/* can insert logo here */}
           <Typography
             variant="h6"
             noWrap
@@ -55,7 +53,11 @@ const Navbar = () => {
             Techyon
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} className="position-absolute" style={{right: '0'}}>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            className="position-absolute"
+            style={{ right: "0" }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -82,9 +84,16 @@ const Navbar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" }
+                display: { xs: "block", md: "none" },
               }}
-              PaperProps={{sx: {width: '90%', backgroundColor: 'grey'}}}
+              PaperProps={{
+                sx: {
+                  width: "90%",
+                  color: "#fff",
+                  background: "rgba(104, 99, 99, 0.5)",
+                  backdropFilter: "blur(14px)",
+                },
+              }}
             >
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
@@ -106,7 +115,7 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+          {/* can insert logo here */}
           <Typography
             variant="h5"
             noWrap
@@ -125,7 +134,13 @@ const Navbar = () => {
           >
             Techyon
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: "flex-end" }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "flex-end",
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page.name}

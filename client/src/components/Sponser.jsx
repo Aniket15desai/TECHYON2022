@@ -27,7 +27,7 @@ function Sponser() {
           {sponserList.map(({ name, image }, id) => {
             return (
               <Box
-                sx={{ maxWidth: { sx: "10%", md: "20%" }, p: 1, background: "white", borderRadius: "5px"}}
+                sx={{ maxWidth: { sx: "10%", md: "20%" }, p: 1,  borderRadius: "5px"}}
                 className="sponser-item"
                 key={id}
               >
