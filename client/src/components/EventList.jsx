@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import "../styles/eventList.css";
 import { eventList } from "../utils/utils";
@@ -7,6 +8,7 @@ const categoryList = ["ALL", "NATIONAL", "MECH", "COMP", "IT", "ETC"];
 
 function EventList() {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const navigate = useNavigate();
   return (
     <>
       <Box sx={{ mb: 3 }} className="events" id="events">
@@ -64,21 +66,25 @@ function EventList() {
                         maxWidth: { xs: "100%", sm: "12rem" },
                         fontSize: { xs: 10, md: 20 },
                         display: { xs: "flex", sm: "block" },
-                        alignItems: 'center',
-                        flexDirection: 'row',
-                        gap: { xs: 2, md: 0 },
+                        alignItems: "center",
+                        flexDirection: "row",
+                        gap: { xs: 2, md: 0 }
                       }}
                       className="card"
                       key={index}
+                      onClick={() => navigate(`/event/${event.id}`)}
                     >
-                      <Box sx={{maxWidth: {xs: '40%', sm: '100%'}}} className="thumbnail-container">
+                      <Box
+                        sx={{ maxWidth: { xs: "40%", sm: "100%" } }}
+                        className="thumbnail-container"
+                      >
                         <img
                           src={event.image}
                           alt=""
                           className="event-thumbnail"
                         />
                       </Box>
-                      <Box sx={{maxWidth: {xs: '60%', sm: '100%'}}}>
+                      <Box sx={{ maxWidth: { xs: "60%", sm: "100%" } }}>
                         <h3 className="event-title">{event.event}</h3>
                         <p className="department-name">{event.department}</p>
                       </Box>
@@ -94,22 +100,28 @@ function EventList() {
                       <Box
                         sx={{
                           p: 2,
-                          maxWidth: { xs: "20rem", md: "12rem" },
+                          maxWidth: { xs: "100%", sm: "12rem" },
                           fontSize: { xs: 10, md: 20 },
-                          display: { xs: "flex", md: "block" },
-                          gap: { xs: 2, md: 0 },
+                          display: { xs: "flex", sm: "block" },
+                          alignItems: "center",
+                          flexDirection: "row",
+                          gap: { xs: 2, md: 0 }
                         }}
                         className="card"
                         key={index}
+                        onClick={() => navigate(`/event/${event.id}`)}
                       >
-                        <Box className="thumbnail-container">
+                        <Box
+                          sx={{ maxWidth: { xs: "40%", sm: "100%" } }}
+                          className="thumbnail-container"
+                        >
                           <img
                             src={event.image}
                             alt=""
                             className="event-thumbnail"
                           />
                         </Box>
-                        <Box>
+                        <Box sx={{ maxWidth: { xs: "60%", sm: "100%" } }}>
                           <h3 className="event-title">{event.event}</h3>
                           <p className="department-name">{event.department}</p>
                         </Box>

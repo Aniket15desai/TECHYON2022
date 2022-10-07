@@ -38,6 +38,7 @@ export const sponserList = [
 
 export const eventList = [
     {
+        id: 1,
         event: "Decrypt",
         department: "Computer Department",
         categories: ["NATIONAL", "COMP"],
@@ -85,11 +86,12 @@ export const eventList = [
             500
         ],
         form: "https://forms.gle/NpJYvGRYX2mfiPPv5",
-        poster: "../posters/COMP/decrypt.jpg",
+        poster: "/assets/images/posters/comp/decrypt.jpg",
         rulebook: "../rulebook/COMP/decrypt.pdf",
         image: '/assets/images/thumbnail/rpa.png'
     },
     {
+        id: 2,
         event: "Game jam",
         department: "Computer Department",
         categories: ["NATIONAL", "IT"],
@@ -137,7 +139,7 @@ export const eventList = [
             500
         ],
         form: "https://forms.gle/NpJYvGRYX2mfiPPv5",
-        poster: "../posters/COMP/decrypt.jpg",
+        poster: "/assets/images/posters/comp/decrypt.jpg",
         rulebook: "../rulebook/COMP/decrypt.pdf",
         image: '/assets/images/thumbnail/rpa.png'
     }
