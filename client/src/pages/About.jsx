@@ -14,9 +14,27 @@ function About() {
                     <hr className='w-15' />
                 </div>
             </div>
-            <div className='position-relative text-center w-100'>Developer</div>
-            <div className='position-relative text-center w-100'>Designer</div>
-            <div className='position-relative text-center w-100'>Coordinator</div>
+            <div className='position-relative text-center w-100'><div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
+                <hr className='w-15' />
+                <div className="fs-24 w-25 text-center">
+                    Developer
+                </div>
+                <hr className='w-15' />
+            </div></div>
+            <div className='position-relative text-center w-100'><div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
+                <hr className='w-15' />
+                <div className="fs-24 w-25 text-center">
+                    Developer
+                </div>
+                <hr className='w-15' />
+            </div></div>
+            <div className='position-relative text-center w-100'><div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
+                <hr className='w-15' />
+                <div className="fs-24 w-25 text-center">
+                    Developer
+                </div>
+                <hr className='w-15' />
+            </div></div>
 
         </div>
     )
