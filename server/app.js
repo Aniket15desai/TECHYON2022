@@ -1,16 +1,15 @@
 import express from "express";
-import mongoose from "mongoose"
 import bodyParser from "body-parser"
-import router from "./routes/index.js";
-import connectDB from '../server/config/db.js'
+import connectDB from "./config/db.js";
+import router from "./routes/index.js"; 
 
 const app = express();
 
- //JSON
+// JSON
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(router)
+app.use(router);
 
 app.get("/", (req, res) => {
   res.send("I'm Working!!");
