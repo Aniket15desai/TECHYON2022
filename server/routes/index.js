@@ -1,10 +1,9 @@
+import  express  from "express";
+import teamrouter from "./team.routes.js";
 
-//routes goes here
-import express from "express";
-import singleParticipantRouter from "./singleParticipant.routes.js"
- const router= express.Router();
-  
-router.use("/SingleParticipant", singleParticipantRouter) ;
+const router=express.Router();
+
+router.use('/teamEvent',teamrouter)
 
 
-export default router;
+export default router
