@@ -1,5 +1,3 @@
-//base api link
-// JSON list of events with (name,thumbnail path, department, description, national boolean field) will go here
 
 export const sponserList = [
     {
@@ -35,6 +33,12 @@ export const sponserList = [
         image: "/assets/images/sponsers/Sj_innovation.png"
     }
 ];
+
+export const developerList = [{}];
+
+export const designerList = [];
+
+export const coordinatorList = [];
 
 export const eventList = [
     {

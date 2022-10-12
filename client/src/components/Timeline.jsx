@@ -2,7 +2,7 @@ import '../styles/timeline.css';
 
 function Timeline() {
     return (
-        <div className="position-relative">
+        <div className="position-relative timeline">
             <div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
                 <hr className='w-15' />
                 <div className="fs-24 w-25 text-center">

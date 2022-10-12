@@ -93,7 +93,7 @@ function Event() {
           {Object.keys(event.rules).map((key, index) => {
             return (
               <Box key={index}>
-                <h4>{key}</h4>
+                <h4 className="rule-title">{key}</h4>
                 <ul className="rule-list">
                   {event.rules[key].map((rule, keyIndex) => (
                     <li key={keyIndex}>{rule}</li>

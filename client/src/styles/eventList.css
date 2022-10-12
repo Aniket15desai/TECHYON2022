@@ -16,7 +16,7 @@
 
 .card {
     background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(237,14,41,1) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,1) 18%, rgba(90,5,16,1) 53%, rgba(134,8,23,1) 69%, rgba(237,14,41,1) 100%);
 border: none;
     border-radius: 25px;
     cursor: pointer;

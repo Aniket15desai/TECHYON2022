@@ -5,7 +5,7 @@ import EventList from "../components/EventList";
 
 function Home() {
   return (
-    <div>
+    <div className="homepage">
       <Hero />
       <Timeline />
       <Sponser />

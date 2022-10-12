@@ -27,7 +27,7 @@ function Hero() {
                     <h3 className={`${isMobile ? 'fs-14':'fs-20'} college-text text-center`}>PCCE GOA ANNUAL TECHNICAL COLLEGE FEST</h3>
                 </div>
             </div>
-            <svg width="100%" height="115" preserveAspectRatio="none" viewBox="0 0 427 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* <svg width="100%" height="115" preserveAspectRatio="none" viewBox="0 0 427 115" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 29.9574C0 107.496 369.664 55.4702 427 115H104.871H0C0 115 0 -47.5814 0 29.9574Z" fill="url(#paint0_linear_0_1)"/>
                 <path d="M0 20.9574C0 98.4963 369.664 46.4701 427 106H104.871H0C0 106 0 -56.5814 0 20.9574Z" fill="url(#paint1_linear_0_1)"/>
                 <defs>
@@ -40,7 +40,7 @@ function Hero() {
                         <stop offset="1" stop-color="#ED0E29" stop-opacity="0"/>
                     </linearGradient>
                 </defs>
-            </svg>
+            </svg> */}
         </>
     )
 }
