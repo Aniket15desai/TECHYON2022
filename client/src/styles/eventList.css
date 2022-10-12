@@ -1,42 +1,47 @@
 .event-pill {
-    font-family: 'Poppins';
-    font-weight: 400;
-    border: 1px solid #ED0E29;
-    cursor: pointer;
-    border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 400;
+  border: 1px solid #ed0e29;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.event-pill:hover{
-    background-color: #ff001e4d;
+.event-pill:hover {
+  background-color: #ff001e4d;
 }
 
 .active-pill {
-    background: #ED0E29;
+  background: #ed0e29;
 }
 
 .card {
-    background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 18%, rgba(90,5,16,1) 53%, rgba(134,8,23,1) 69%, rgba(237,14,41,1) 100%);
-border: none;
-    border-radius: 25px;
-    cursor: pointer;
+  background: #121417;
+  /* background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 18%,
+    rgba(90, 5, 16, 1) 53%,
+    rgba(134, 8, 23, 1) 69%,
+    rgba(237, 14, 41, 1) 100%
+  ); */
+  border-left: .2rem solid #ed0e29;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 .event-thumbnail {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .event-title {
-    font-family: 'poppins';
-    font-weight: 700;
-    padding: .5rem 0 .2rem;
-    margin: 0;
+  font-family: "poppins";
+  font-weight: 700;
+  padding: 0.5rem 0 0.2rem;
+  margin: 0;
 }
 
-.department-name{
-    font-family: 'poppins';
-    font-weight: 400;
-    font-size: 1em;
-    padding: .2rem 0;
+.department-name {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0.2rem 0;
 }
-
