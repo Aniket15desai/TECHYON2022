@@ -12,7 +12,10 @@ const SingleParticipantSchema =  mongoose.Schema({
   college: String,
   branch: String,
   score: String,
-  eventName:String
+  eventName:{
+    type:String,
+    required:true
+  }
 },
 {
   timestamps: true 
@@ -22,7 +25,8 @@ SingleParticipantSchema.plugin(mongooseSerial, { field:"participantNo",digits:1}
 let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false,
+    pool:true, // true for 465, false for other ports
     auth: {
       user: 'techyon2022@gmail.com', // generated ethereal user
       pass: 'neawvayddesktqzs', // generated ethereal password
