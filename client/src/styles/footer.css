@@ -17,7 +17,7 @@
 }
 
 .contact {
-    background-color: #000000;
+    background-color: var(--background-color);
     border-top: 2px solid #ED0E29;
 }
 .contact-title{

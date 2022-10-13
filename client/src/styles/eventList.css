@@ -16,14 +16,19 @@
 
 .card {
   background: #121417;
-  /* background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 18%,
-    rgba(90, 5, 16, 1) 53%,
-    rgba(134, 8, 23, 1) 69%,
-    rgba(237, 14, 41, 1) 100%
-  ); */
-  border-left: .2rem solid #ed0e29;
+
+  /* background-color: #121417;
+opacity: 0.8;
+background-image:  linear-gradient(#b31d1d 1px, transparent 1px), linear-gradient(to right, #b31d1d 1px, #121417 1px);
+background-size: 20px 20px; */
+
+background-color: #121417;
+opacity: 0.9;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #121417 10px ), repeating-linear-gradient( #ff0a0a55, #ff0a0a );
+
+  /* border-left: .2rem solid #ed0e29; */
+  border-left: .2rem solid #d61f1f;
+  border-bottom: .2rem solid #d61f1f;
   border-radius: 25px;
   cursor: pointer;
 }
