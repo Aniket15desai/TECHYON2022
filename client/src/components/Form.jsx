@@ -4,7 +4,7 @@ import "../styles/form.css";
 
 const Form = ({ isMobile, eventDetails }) => {
   const [isTeam, setIsTeam] = useState(eventDetails.team);
-  const [isMember, setIsMember] = useState(2);
+  const [isMember, setIsMember] = useState(1);
   const [nameI, setName] = useState("");
   const [emailI, setEmail] = useState("");
   const [phoneI, setPhone] = useState("");
