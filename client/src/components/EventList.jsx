@@ -85,7 +85,7 @@ function EventList() {
                         />
                       </Box>
                       <Box sx={{ maxWidth: { xs: "60%", sm: "100%" } }}>
-                        <h3 className="event-title">{event.event}</h3>
+                        <h3 className="event-title">{event.eventName}</h3>
                         <p className="department-name">{event.department}</p>
                       </Box>
                     </Box>
@@ -122,7 +122,7 @@ function EventList() {
                           />
                         </Box>
                         <Box sx={{ maxWidth: { xs: "60%", sm: "100%" } }}>
-                          <h3 className="event-title">{event.event}</h3>
+                          <h3 className="event-title">{event.eventName}</h3>
                           <p className="department-name">{event.department}</p>
                         </Box>
                       </Box>
