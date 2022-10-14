@@ -38,7 +38,24 @@ export const developerList = [{}];
 
 export const designerList = [];
 
-export const coordinatorList = [];
+export const coordinatorList = [{
+    name: "Aayush Anand",
+    department: "Computer",
+    role: "Cheif Coordinator",
+    image: "/assets/images/profileImages/aayush.jpg"
+},
+{
+    name: "Aayush Anand",
+    department: "Computer",
+    role: "Cheif Coordinator",
+    image: "/assets/images/profileImages/aayush.jpg"
+},
+{
+    name: "Aayush Anand",
+    department: "Computer",
+    role: "Cheif Coordinator",
+    image: "/assets/images/profileImages/aayush.jpg"
+}];
 
 export const eventList = [
     {

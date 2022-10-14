@@ -1,0 +1,32 @@
+.coordinator-card {
+  background: #121417;
+  background-color: #121417;
+  opacity: 0.8;
+  background-image: linear-gradient(#b31d1d 1px, transparent 1px),
+    linear-gradient(to right, #b31d1d 1px, #121417 1px);
+  background-size: 20px 20px;
+  border-radius: 25px;
+  border: 1px solid var(--primary-color);
+}
+
+.profile-img {
+  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 50%;
+}
+
+.coordinator-title {
+    font-family: "poppins";
+    font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 0 0.2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.coordinator-card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
