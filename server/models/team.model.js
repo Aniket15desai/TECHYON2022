@@ -76,7 +76,7 @@ const TeamParticipentSchema = new mongoose.Schema({
     },
     mem4_Name: {
         type: String,
-        required: true
+        // required: true
     },
     mem4_Contact: {
         type: Number,
