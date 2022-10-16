@@ -310,7 +310,17 @@ const itEvents = [
   },
 ];
 
+const mechEvents = [
+  
+];
+
+const etcEvents = [
+
+];
+
 export const eventList = [
     ...computerEvents,
-    ...itEvents
+    ...itEvents,
+    ...mechEvents,
+    ...etcEvents
 ];
