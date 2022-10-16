@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed" sx={{ background: "#0e0d0d" }}>
+    <AppBar position="fixed" sx={{ background: "#0e0d0d80" }} className="app-bar">
       <Container maxWidth="xl">
         <Toolbar>
           {/* can insert logo here */}
@@ -88,7 +88,7 @@ const Navbar = () => {
               }}
               PaperProps={{
                 sx: {
-                  width: "90%",
+                  width: "100%",
                   color: "#fff",
                   background: "rgba(104, 99, 99, 0.5)",
                   backdropFilter: "blur(14px)",

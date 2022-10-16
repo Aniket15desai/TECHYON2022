@@ -2,8 +2,10 @@
   background: #121417;
   background-color: #121417;
   opacity: 0.8;
-  background-image: linear-gradient(#b31d1d 1px, transparent 1px),
-    linear-gradient(to right, #b31d1d 1px, #121417 1px);
+  /* background-image: linear-gradient(#b31d1d 1px, transparent 1px),
+    linear-gradient(to right, #b31d1d 1px, #121417 1px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-size: 20px 20px;
   border-radius: 25px;
   border: 1px solid var(--primary-color);
@@ -26,7 +28,26 @@
 
 .coordinator-card p {
     margin: 0;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 400;
     text-align: center;
+}
+
+.btn-wa {
+  padding: .5rem 0;
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(33, 34, 37, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.171);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn-wa:hover {
+  border: 1px solid rgba(92, 247, 126, 0.733);
+  background-color: rgba(92, 247, 126, 0.733);
+}
+
+.wa-icon {
+  max-width:2rem;
 }

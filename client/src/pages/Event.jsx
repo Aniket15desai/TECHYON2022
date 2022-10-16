@@ -16,7 +16,8 @@ function Event() {
 
   if (event)
     return (
-      <div className="event-page-container container">
+      <div className="background-pattern">
+        <div className="event-page-container container">
         <div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
           <hr className="w-15" />
           <div className="fs-24 w-25 text-center">{event.eventName}</div>
@@ -60,6 +61,7 @@ function Event() {
             })}
           </Box>
         </Box>
+      </div>
       </div>
     );
   else return <h3>Loading..</h3>;

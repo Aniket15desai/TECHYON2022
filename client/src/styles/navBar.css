@@ -1,3 +1,9 @@
+.app-bar{
+    background-color: #0e0d0d80;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+
 .link{
     text-decoration: none;
     font-family: 'poppins';

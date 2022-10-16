@@ -4,7 +4,7 @@ import "../styles/sponser.css";
 
 function Sponser() {
   return (
-    <>
+    <div className="sponser-section">
       <Box className="sponsers">
       <div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
                 <hr className='w-15' />
@@ -37,7 +37,7 @@ function Sponser() {
           })}
         </Box>
       </Box>
-    </>
+    </div>
   );
 }
 
