@@ -20,7 +20,7 @@ function Event() {
         <div className="event-page-container container">
           <div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
             <hr className="w-15" />
-            <div className="fs-24 w-25 text-center">{event.eventName}</div>
+            <div className="fs-24 w-25 text-center w-wrap">{event.eventName}</div>
             <hr className="w-15" />
           </div>
           <Box
@@ -30,26 +30,21 @@ function Event() {
             <Box sx={{ maxWidth: { md: "40%" } }} className="poster-container">
               <img src={event.poster} alt="" />
             </Box>
-            <Box className="details-container">
-              <p>Department: {event.department}</p>
-              <p>Type: {event.type}</p>
-              <p>Date: {event.date}</p>
-              <p>Time: {event.time}</p>
-              <p>Location: {event.location}</p>
-              <button
-                onClick={() =>
-                  navigate(`/registration/${id}`, {
-                    state: {
-                      id: event.id,
-                      eventName: event.eventName,
-                      team: event.team,
-                    },
-                  })
-                }
+            <Box className="details-container mt-4">
+              <p><span className="heading">Department</span>: {event.department}</p>
+              <p><span className="heading">Type</span>: {event.type}</p>
+              <p><span className="heading">Date</span>: {event.date}</p>
+              <p><span className="heading">Time</span>: {event.time}</p>
+              <p><span className="heading">Location</span>: {event.location}</p>
+              <a
+                href={event.form} rel="noreferrer" target="_blank"
                 className="btn form-btn px-5"
               >
                 REGISTER
-              </button>
+              </a>
+
+              {/* prize */}
+
               <h3 className="my-3">Instruction: </h3>
               {Object.keys(event.rules).map((key, index) => {
                 return (
@@ -68,7 +63,7 @@ function Event() {
               {event.event_coordinators.map((coordinator, index) => (
                 <p>
                   
-                  <a href={coordinator.phone} rel="noreferrer" target="_blank">
+                  <a href={`https://wa.me/${coordinator.phone}`} rel="noreferrer" target="_blank">
                     <img
                       src="/assets/images/socials/whatsapp.png"
                       alt="whatsapp"

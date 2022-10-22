@@ -16,7 +16,7 @@ const pages = [
   { name: "Home", path: "/" },
   { name: "Events", path: "" },
   { name: "Team", path: "" },
-  { name: "Result", path: "result" },
+  // { name: "Result", path: "result" },
 ];
 
 const Navbar = () => {
@@ -54,7 +54,7 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            Techyon
+            <img src="/assets/images/techyon.png" alt="" className="main-logo" />
           </Typography>
 
           <Box
@@ -151,7 +151,7 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            Techyon
+            <img src="/assets/images/techyon.png" alt="" className="main-logo" />
           </Typography>
           <Box
             sx={{
@@ -178,16 +178,27 @@ const Navbar = () => {
                   >
                     <NavLink
                       to={page.path}
-                      className={`nav-link ${(navData) =>
+                      className={`nav-link link ${(navData) =>
                         navData.isActive ? "active-link" : ""}`}
                     >
                       {page.name}
                     </NavLink>
                   </div>
+                ) :  page.name === "Team" ? (
+                  <NavLink to={page.path} className={`nav-link link`}>
+                    <div
+                      onClick={() => {
+                        const anchor = document.getElementById("team");
+                        anchor.scrollIntoView({ block: "center" });
+                      }}
+                    >
+                      {page.name}
+                    </div>
+                  </NavLink>
                 ) : (
                   <NavLink
                     to={page.path}
-                    className={`nav-link ${(navData) =>
+                    className={`nav-link link ${(navData) =>
                       navData.isActive ? "active-link" : ""}`}
                   >
                     {page.name}

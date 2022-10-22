@@ -15,14 +15,14 @@ function Footer() {
             particle with speed more than the speed of the light.
           </p>
         </Box>
-        <Box sx ={{width: {sm: '50%'}, p: 2}} className="contact">
+        <Box sx ={{width: {sm: '50%'}, p: 2, margin: 0}} className="contact">
           <h3 className="contact-title">CONTACT US</h3>
           <p className="contact-description">
             Follow us over social media for updates and for any Queries contact
             official techyon email.
           </p>
           <Box sx={{display: 'flex'}} className="social-items">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:techyon2022@gmail.com" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/images/socials/gmail.png"
               alt="gmail"
@@ -30,7 +30,7 @@ function Footer() {
             />
             </a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/pccetechyon/" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/images/socials/instagram.png"
               alt="instagram"
@@ -38,14 +38,14 @@ function Footer() {
             />
             </a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://in.linkedin.com/school/pccegoaofficialpage/" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/images/socials/linkedin.png"
               alt="linkedin"
               className="social-icon"
             />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/maps/place/Padre+Conceicao+College+of+Engineering/@15.3269589,73.9313833,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbfb6d4f1f6451d:0x5aa42df33ac41f6!8m2!3d15.3269589!4d73.933572" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/images/socials/map.png"
               alt="map"

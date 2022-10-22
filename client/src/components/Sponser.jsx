@@ -9,7 +9,7 @@ function Sponser() {
       <div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
                 <hr className='w-15' />
                 <div className="fs-24 w-25 text-center">
-                    SPONSERS
+                    EVENT ASSOCIATES
                 </div>
                 <hr className='w-15' />
             </div>
@@ -27,7 +27,7 @@ function Sponser() {
           {sponserList.map(({ name, image, link }, id) => {
             return (
               <Box
-                sx={{ maxWidth: { sx: "10%", md: "20%" }, p: 1,  borderRadius: "5px"}}
+                sx={{ maxWidth: { sx: "4rem", md: "7rem" }, p: 1,  borderRadius: "5px"}}
                 className="sponser-item"
                 key={id}
               >

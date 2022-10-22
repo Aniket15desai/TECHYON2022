@@ -8,7 +8,7 @@ function CoordinatorList() {
     <div className="coordinator-section" id="teams">
       <div className="d-flex row justify-content-center align-items-center m-0 p-0 my-5">
         <hr className="w-15" />
-        <div className="fs-24 w-25 text-center">Coordinators</div>
+        <div className="fs-24 w-25 text-center">COORDINATORS</div>
         <hr className="w-15" />
       </div>
       <Box
